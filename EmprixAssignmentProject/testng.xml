@@ -1,5 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Emprix Smoke Test" thread-count="10" parallel="tests" >
+
+<suite name="Emprix Smoke Test" thread-count="10" parallel="classes" >
 <listeners>
     <listener class-name="com.Emprix.listener.TestNGListener" />
   </listeners>
@@ -8,41 +9,17 @@
 <parameter name="browser" value="chrome"/>
 <classes >
 <class name="com.Emprix.testcases.LoginPageTest"/>
-</classes>
-</test>
-<test name="chromeTest2" >
-<parameter name="browser" value="chrome"/>
-<classes >
 <class name="com.Emprix.testcases.ProfilePageTest"/>
-</classes>
-</test>
-<test name="chromeTest3" >
-<parameter name="browser" value="chrome"/>
-<classes >
 <class name="com.Emprix.testcases.ClientPageTest"/>
-</classes>
-</test>
-
-
-<test name="firefoxTest1" >
-<parameter name="browser" value="firefox"/>
-<classes >
-<class name="com.Emprix.testcases.LoginPageTest"/>
-</classes>
-</test>
-<test name="firefoxTest2" >
-<parameter name="browser" value="firefox"/>
-<classes >
-<class name="com.Emprix.testcases.ProfilePageTest"/>
 </classes>
 </test>
 <test name="firefoxTest3" >
-<parameter name="browser" value="firefox"/>
+<parameter name="browser" value="chrome"/>
 <classes >
+<class name="com.Emprix.testcases.LoginPageTest"/>
+<class name="com.Emprix.testcases.ProfilePageTest"/>
 <class name="com.Emprix.testcases.ClientPageTest"/>
 </classes>
 </test>
-
-
 
 </suite>
