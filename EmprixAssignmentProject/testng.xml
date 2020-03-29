@@ -5,7 +5,7 @@
     <listener class-name="com.Emprix.listener.TestNGListener" />
   </listeners>
 
-<test name="chromeTest1" >
+<test name="chromeTest" >
 <parameter name="browser" value="chrome"/>
 <classes >
 <class name="com.Emprix.testcases.LoginPageTest"/>
@@ -13,7 +13,7 @@
 <class name="com.Emprix.testcases.ClientPageTest"/>
 </classes>
 </test>
-<test name="firefoxTest3" >
+<test name="firefoxTest" >
 <parameter name="browser" value="chrome"/>
 <classes >
 <class name="com.Emprix.testcases.LoginPageTest"/>
